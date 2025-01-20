@@ -1,5 +1,5 @@
 import { useAuth0 } from "@auth0/auth0-react";
-import PageLayout from "./PageLayout";
+import PageLayout from "../components/pages/PageLayout";
 
 const CallbackPage: React.FC = () => {
 

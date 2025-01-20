@@ -1,12 +1,13 @@
 import { Col, Container } from "react-bootstrap";
-import LoginButton from "./LoginButton";
-import LogoutButton from "./LogoutButton";
+import LoginButton from "../login/LoginButton";
+import LogoutButton from "../login/LogoutButton";
 
 const HomePage: React.FC = () => {
   return (
     <Container>
       <Col>
-        <h1>Hello Auth0 World</h1>
+      <h2>Welcome to the</h2>
+      <h1>Task Management App Homepage!</h1>
         <LoginButton />
         <LogoutButton />
       </Col>

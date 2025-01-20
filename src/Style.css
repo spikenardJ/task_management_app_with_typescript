@@ -17,6 +17,15 @@ body {
     border-radius: 12px;
 }
 
+#profile-image {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #new-task-btn, #form-submit-btn {
     background-color: lightgray;
     height: 50px;
@@ -48,6 +57,18 @@ body {
     line-height: 10px;
     font-size: 12px;
     position: relative;
+}
+
+#login-btn, #logout-btn {
+    background-color: #B0C4DE;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    color: navy;
+    line-height: 10px;
+    font-size: 12px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 #return-d-board {
@@ -106,7 +127,7 @@ body {
     margin: 40px 25%;
 }
 
-#form {
+#form, #profile-info {
     justify-content: center;
     align-items: center;
     margin: 40px 30%;
@@ -149,4 +170,40 @@ h2, h3, p {
 
 h2 {
     margin-top: 50px;
+}
+
+nav {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 0 10px black;
+
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: navy;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #DCDCDC;
+    color: #191970;
+    border-radius: 10px;
+}
+
+nav a.active {
+    background-color: #B0C4DE;
+    color: navy;
+    border-radius: 10px;
+}
+
+.nav-bar::after {
+    content: "";
+    clear: both;
+    display: table;
 }

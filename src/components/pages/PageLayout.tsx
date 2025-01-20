@@ -1,6 +1,6 @@
 import { Col, Container } from "react-bootstrap";
-import NavBar from "./NavBar";
-import NavBarButtons from "./NavBarButtons";
+import NavBar from "../navbar/NavBar";
+import NavBarButtons from "../navbar/NavBarButtons";
 
 type PageLayoutProps = {
   children?: React.ReactNode;
@@ -12,8 +12,8 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
       <Col>
       <NavBar />
       </Col>
-      <h1>My App</h1>
-      {children}
+        <h1>Task Management App</h1>
+        {children}
       <footer>
         <NavBarButtons />
       </footer>

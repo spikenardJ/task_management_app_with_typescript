@@ -1,5 +1,5 @@
 import PageLayout from "./PageLayout";
-import SessionStorageForm from "./SessionStorageForm";
+import SessionStorageForm from "../../storage/SessionStorageForm";
 
 const ContentPage: React.FC= () => {
   return (

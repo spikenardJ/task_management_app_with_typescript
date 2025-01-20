@@ -19,10 +19,11 @@ const ProfilePage: React.FC = () =>{
     return(
         <PageLayout>
             <h2>Profile Page</h2>
-            <Col>
-                {user?.picture && <img src={user.picture} alt={user.name} />}
+            <Col><div id="profile-image">
+                {user?.picture && <img id="profile-image" src={user.picture} alt={user.name} />}
+                </div>
                 <h3>{user.name}</h3>
-                <div>
+                <div id="profile-info">
                     {
                         Object.keys(user).map((objKey, index) => 
                             <p key={index}><b>{objKey}</b>: {user[objKey]}</p>                            

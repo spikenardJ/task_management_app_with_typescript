@@ -1,7 +1,7 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import { Container } from "react-bootstrap";
-import LoginButton from "./LoginButton";
-import LogoutButton from "./LogoutButton";
+import LoginButton from "../login/LoginButton";
+import LogoutButton from "../login/LogoutButton";
 
 const NavBarButtons: React.FC = () => {
   const { isAuthenticated } = useAuth0();

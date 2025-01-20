@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { useTaskContext } from "../context/TaskContext";
+import { useTaskContext } from "../../../context/TaskContext";
 import { Button } from "react-bootstrap";
 
 const TaskDetails = () => {

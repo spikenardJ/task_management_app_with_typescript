@@ -12,7 +12,7 @@ const LogoutButton: React.FC = () => {
     });
   };
 
-  if(isAuthenticated) return (<Button onClick={handleLogout}>Log Out</Button>)
+  if(isAuthenticated) return (<Button id="logout-btn" onClick={handleLogout}>Log Out</Button>)
   return null;
 }
 

@@ -15,7 +15,7 @@ const LoginButton: React.FC = () => {
     });
   };
 
-  if(!isAuthenticated) return (<Button onClick={handleLogin}>Log In</Button>)
+  if(!isAuthenticated) return (<Button id="login-btn" onClick={handleLogin}>Log In</Button>)
   return null;
 };
 
