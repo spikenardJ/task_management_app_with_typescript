@@ -26,8 +26,8 @@ const TaskForm = () => {
         e.preventDefault()
         const newTask = {
             id: id || Date.now().toString(),
-            title: title, // shorthand = just title, which would read title: title, (if both are the same)
-            description: description, // same as above
+            title: title,
+            description: description,
             completed: false
         }
         if (existingTask) {
@@ -35,7 +35,7 @@ const TaskForm = () => {
         } else {
             addTask(newTask)
         }
-        navigate("/")
+        navigate("/task-dashboard")
     }
 
     return (

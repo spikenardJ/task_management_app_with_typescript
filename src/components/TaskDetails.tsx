@@ -12,7 +12,7 @@ const TaskDetails = () => {
 
     const handleDelete = () => {
         deleteTask(task.id);
-        navigate("/")
+        navigate("/task-dashboard")
     }
 
     return (
@@ -26,7 +26,7 @@ const TaskDetails = () => {
                 <br />
                 <Button id="delete-task-btn" onClick={handleDelete}>Delete Task</Button>
                 <br /><br />
-                <Button id="return-d-board" onClick={() => navigate("/")}>
+                <Button id="return-d-board" onClick={() => navigate("/task-dashboard")}>
                     Return to Dashboard
                 </Button>
             </div>
