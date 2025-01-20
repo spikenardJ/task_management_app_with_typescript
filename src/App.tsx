@@ -2,7 +2,7 @@ import TaskDashboard from "./components/TaskDashboard";
 import TaskDetails from "./components/TaskDetails";
 import TaskForm from "./components/TaskForm";
 import TaskContextProvider from "./context/TaskContext";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import CallbackPage from "./components/CallbackPage";
 import ProtectedPage from "./components/ProtectedPage";
@@ -21,8 +21,7 @@ const App: React.FC = () => {
   return (
     <>
     <TaskContextProvider>
-      {/* <BrowserRouter> */}
-        <Routes>
+      <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/profile" element={<AuthenticationGuard component={ProfilePage} />} />
           <Route path="/protected" element={<AuthenticationGuard component={ProtectedPage} />} />
@@ -33,7 +32,6 @@ const App: React.FC = () => {
           <Route path="/task/new" element={<TaskForm/>} />
           <Route path="*" element={<Navigate to={"/"}/>} /> 
         </Routes>
-      {/* </BrowserRouter> */}
     </TaskContextProvider>
     </>
   )
