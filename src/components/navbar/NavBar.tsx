@@ -8,9 +8,10 @@ const NavBar: React.FC = () => {
 return (
   <Navbar bg="light" expand="lg">
     <Navbar.Brand href="/">Task Management App</Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        
     {isAuthenticated && (
       <>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="nav-bar m-4">
             <NavLink
@@ -30,12 +31,6 @@ return (
               className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
             >
               Protected Personal Notes
-            </NavLink>
-            <NavLink
-              to="/content"
-              className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
-            >
-              Content
             </NavLink>
           </Nav>
         </Navbar.Collapse>
