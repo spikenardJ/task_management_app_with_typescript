@@ -1,14 +1,3 @@
-// import PageLayout from "./PageLayout";
-
-// const ProtectedPage: React.FC = () =>{
-//     return(
-//         <PageLayout>
-//             <h2>Protected Personal Notes</h2>
-//         </PageLayout>
-//     )
-// }
-// export default ProtectedPage;
-
 import React, { useState, useEffect } from "react";
 import PageLayout from "./PageLayout";
 
