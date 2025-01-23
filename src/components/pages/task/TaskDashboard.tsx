@@ -49,6 +49,7 @@ const TaskDashboard = () => {
                                 ))}
                             </ul>
                             <br /><br />
+                            <h3>Thank you!</h3>
                         </div>
                     </Row>
                     <Row>
